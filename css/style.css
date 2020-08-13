@@ -134,7 +134,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 415px;
+    max-width: 415px;
     margin: 0 auto;
 }
 
@@ -371,6 +371,9 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 
 .services-item {
     width: 25.1%;
+}
+
+.services-item--first {
     margin-bottom: 65px;
 }
 
@@ -432,6 +435,11 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    margin: 0 0 0 30px;
+}
+
+.features-twice-image__item:first-child {
+    margin: 0 15px 0 0;
 }
 
 .features__header {
@@ -843,14 +851,257 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 
 /* Media --------------------------------------------------------------------- 1345 */
 @media (max-width: 1345px){
-    /* header */
-    .header
+    /* features--dark (business plan) */
+    .features__title {
+        font-size: 46px;
+    }
 }
+
+/* Media --------------------------------------------------------------------- 1200 */
+@media (max-width: 1200px) {
+    /* section */
+    .section {
+        padding: 120px 0;
+    }
+
+    /* first-info */
+    .first-info__item {
+        padding: 30px 25px;
+    }
+
+    /* features--dark (business plan) */
+    .features__header--dark {
+        justify-content: space-between;
+    }
+
+    .features__title--dark {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    /* buttons */
+    .button--features-dark {
+        margin-top: 20px;
+    }
+
+    /* features--gray */
+    .features--gray {
+        flex-direction: column-reverse;
+    }
+}
+
 /* Media --------------------------------------------------------------------- 990 */
-@media (max-width: 990px){}
+@media (max-width: 990px){
+    /* section */
+    .section {
+        padding: 75px 0;
+    }
+
+    /* intro */
+    .intro__title {
+        font-size: 53px;
+    }
+
+    /* first-info */
+    .first-info__inner {
+        flex-wrap: wrap;
+    }
+
+    .first-info__item {
+        max-width: 48.2%;
+        margin: 0 auto;
+    }
+
+    .first-info__item:last-child {
+        margin-top: 1.5%;
+    }
+    
+    .first-info__image {
+        margin-bottom: 10px;
+    }
+
+    .first-info__title::after {
+        margin: 10px 0 15px;
+    }
+
+    /* services */
+    .services__header {
+        margin-bottom: 70px;
+    }
+
+    .services__title {
+        font-size: 53px;
+    }
+    
+
+    /* features--dark (business plan) */
+     .features--dark {
+        flex-direction: column;
+    }
+
+    .features__header--dark {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    .features__title--dark {
+        font-size: 38px;
+    }
+
+    .features-twice-image__wrapper {
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+}
 /* Media --------------------------------------------------------------------- 840 */
-@media (max-width: 840px){}
+@media (max-width: 840px){
+    /* intro */
+    .intro__title {
+        font-size: 49px;
+    }
+
+    /* nav */
+    .nav {
+        display: none;
+    }
+
+    /* services */
+    .services__header {
+        margin-bottom: 60px;
+    }
+
+    .services-item {
+        width: 47%;
+    }
+
+    .services__title {
+        font-size: 48px;
+    }
+}
 /* Media --------------------------------------------------------------------- 770 */
-@media (max-width: 770px){}
+@media (max-width: 770px){
+    /* intro */
+    .intro__title {
+        font-size: 35px;
+    }
+
+    /* first-info */
+    first-info__title {
+        font-size: 19px;
+    }
+
+    /* services */
+    .services__header {
+        margin-bottom: 45px;
+    }
+
+    .services__title {
+        font-size: 42px;
+    }
+}
+
+/* Media --------------------------------------------------------------------- 680 */
+@media (max-width: 660px) {
+    /* first-info */
+    .first-info__item {
+        max-width: 100%;
+        margin-bottom: 1.5%;
+    }
+    
+    .first-info__item:last-child {
+        margin-top: 0;
+    }
+
+    /* services */
+    .services-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .services__title {
+        font-size: 35px;
+    }
+}
 /* Media --------------------------------------------------------------------- 575 */
-@media (max-width: 575px){}
+@media (max-width: 575px){
+    /* section */
+    .section {
+        padding: 50px 0;
+    }
+
+    /* header */
+    .header {
+        margin-top: 0;
+    }
+
+    /* intro */
+    .intro__title {
+        margin-bottom: 25px;
+
+        font-size: 28px;
+    }
+
+    .intro__subtitle {
+        display: none;
+    }
+
+    .intro__buttons {
+        flex-direction: column;
+    }
+
+    /* buttons */
+    .button--intro {
+        margin: 0 auto;
+    }
+
+    .button--intro:first-child {
+        margin-bottom: 35px;
+    }
+
+    /* first-info */
+    .first-info__item {
+        margin-bottom: 10px;
+        padding: 15px 15px;
+    }
+
+
+    .first-info__title {
+        font-size: 17px;
+    }
+
+    /* services */
+    .services-item {
+        margin-bottom: 20px;
+    }
+
+    .services__header {
+        margin-bottom: 30px;
+    }
+
+    .services__title {
+        margin-bottom: 10px;
+
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    
+    .services-item__title {
+        font-size: 30px;
+    }
+
+    /* features--dark (business plan */
+    .features-twice-image__item:first-child {
+        margin: 0;
+    }
+
+    .features-twice-image__item:last-child {
+        display: none;
+    }
+
+    .features__title--dark {
+        font-size: 25px;
+    }
+}
