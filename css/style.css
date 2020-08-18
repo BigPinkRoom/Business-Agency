@@ -174,7 +174,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 }
 
 
-/* Button */
+/* button */
 .button {
     display: inline-block;
     padding: 10px 0;
@@ -225,7 +225,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 }
 
 
-/* Header */
+/* header */
 .header {
     position: absolute;
     z-index: 1000;
@@ -240,6 +240,10 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     align-items: center;
 }
 
+/* header intro--services-page */
+.header.intro--services-page {
+    background-image: none;
+}
 
 /* logo */
 .logo {
