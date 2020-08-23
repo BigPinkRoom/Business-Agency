@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-        <script defer href="js/app.js"></script>
+        <script defer src="js/app.js"></script>
         <title>Kallyas businnes agency</title>
     </head>
 
@@ -13,7 +13,7 @@
 
 
         <!-- header -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
 
                 <div class="header__inner">
@@ -22,14 +22,18 @@
 
                     <nav class="nav">
                         <ul class="nav__ul">
-                            <li class="nav__li"><a class="nav__link">Home</a></li>
-                            <li class="nav__li"><a class="nav__link">Services</a></li>
-                            <li class="nav__li"><a class="nav__link">Works</a></li>
-                            <li class="nav__li"><a class="nav__link">About us</a></li>
-                            <li class="nav__li"><a class="nav__link">Features</a></li>
-                            <li class="nav__li"><a class="nav__link">Contact</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="intro">Home</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="services">Services</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="gallery">Works</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="about-us">About us</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="features">Features</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="contact">Contact</a></li>
                         </ul>
                     </nav>
+
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
 
                 </div>
 
@@ -38,7 +42,7 @@
 
 
         <!-- intro -->
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="container">
 
                 <div class="intro__inner">
@@ -98,7 +102,7 @@
 
 
         <!-- services -->
-        <section class="section">
+        <section class="section" id="services">
             <div class="container">
 
                 <div class="services">
@@ -200,7 +204,7 @@
 
 
         <!-- features gray -->
-        <section class="section section--gray">
+        <section class="section section--gray" id="features">
             <div class="container">
 
                 <div class="features features--gray">
@@ -243,7 +247,7 @@
 
 
         <!-- gallery -->
-        <div class="section section--gallery">
+        <div class="section section--gallery" id="gallery">
 
             <div class="gallery">
 
@@ -291,7 +295,7 @@
 
 
     <!-- features white -->
-    <section class="section section--white">
+    <section class="section section--white" id="about-us">
         <div class="container">
 
             <div class="features features--video">
@@ -385,7 +389,7 @@
 
 
     <!-- contacts -->
-    <section class="section">
+    <section class="section" id="contact">
         <div class="container">
             <div class="contacts">
                 <div class="contacts__header">

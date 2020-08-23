@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-        <script defer href="js/app.js"></script>
+        <script defer src="js/app.js"></script>
         <title>Kallyas businnes agency</title>
     </head>
 
@@ -13,7 +13,7 @@
 
 
         <!-- header -->
-        <header class="header intro--services-page">
+        <header class="header intro--services-page" id="header">
             <div class="container">
 
                 <div class="header__inner">
@@ -22,14 +22,18 @@
 
                     <nav class="nav">
                         <ul class="nav__ul">
-                            <li class="nav__li"><a class="nav__link">Home</a></li>
-                            <li class="nav__li"><a class="nav__link">Services</a></li>
-                            <li class="nav__li"><a class="nav__link">Works</a></li>
-                            <li class="nav__li"><a class="nav__link">About us</a></li>
-                            <li class="nav__li"><a class="nav__link">Features</a></li>
-                            <li class="nav__li"><a class="nav__link">Contact</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="intro">Home</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="services">Services</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="gallery">Works</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="about-us">About us</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="features">Features</a></li>
+                            <li class="nav__li"><a class="nav__link" data-scroll="contact">Contact</a></li>
                         </ul>
                     </nav>
+
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
 
                 </div>
 
@@ -38,7 +42,7 @@
 
 
         <!-- intro -->
-        <section class="intro intro--services-page">
+        <section class="intro intro--services-page" id="intro">
             <div class="container">
                 
                 <div class="intro__inner">
@@ -155,10 +159,10 @@
                     <div class="footer__address"><p>758 E. Beechwood Lane Bay Shore, NY 11706</p>
                         <p>youremail@address.com, +1-202-555-0158</p></div>
                     <div class="footer__social">
-                        <img src="/images/footer/footer-1.png" alt="" class="footer__image">
-                        <img src="/images/footer/footer-2.png" alt="" class="footer__image">
-                        <img src="/images/footer/footer-3.png" alt="" class="footer__image">
-                        <img src="/images/footer/footer-4.png" alt="" class="footer__image">
+                        <img src="/images/footer/footer_1.png" alt="" class="footer__image">
+                        <img src="/images/footer/footer_2.png" alt="" class="footer__image">
+                        <img src="/images/footer/footer_3.png" alt="" class="footer__image">
+                        <img src="/images/footer/footer_4.png" alt="" class="footer__image">
                     </div>
                 </div>
                 <div class="footer-content">
