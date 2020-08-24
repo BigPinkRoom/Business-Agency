@@ -1522,7 +1522,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 
     /* contacts */
     .contacts__title {
-        font-style: 32px;
+        font-size: 32px;
     }
 }
 /* Media --------------------------------------------------------------------- 575 */
