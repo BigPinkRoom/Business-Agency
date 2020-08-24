@@ -150,7 +150,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 }
 
 /* intro--services-page intro */
-.intro--services-page {
+.intro.intro--services-page {
     height: 100vh;
 
     background-image: url(../images/services-page/services-page_bg.jpg);
