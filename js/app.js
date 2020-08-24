@@ -1,10 +1,10 @@
 (function(){
 
     // Constants
-    const header = document.getElementById('header');
-    const navToggle = document.getElementById('nav-toggle');
-    const navLink = document.querySelector('.nav__link')
-    const intro = document.getElementById('intro');
+    const header = document.getElementById('header'),
+          navToggle = document.getElementById('nav-toggle'),
+          navLink = document.querySelector('.nav__link'),
+          intro = document.getElementById('intro');
     
     // Burger menu toggle
     function toggleHeaderBurger() {
@@ -71,4 +71,29 @@
 
     document.addEventListener('click', smoothScroll)
 
+    // Gallery filter
+    function imageFilter() {
+        if(!event.target.classList.contains("gallery__link")) return
+        
+        let categoryName = event.target.textContent.toLowerCase();
+
+        let Allcategory = document.querySelectorAll(`.gallery__wrapper img[data-category]`);
+
+        Allcategory.forEach(element => {
+            if(categoryName === "all") {
+                element.parentElement.style.display="block";
+            } else {
+            element.parentElement.style.display="none";
+            }
+        });
+
+        let currentCategory = document.querySelectorAll(`.gallery__wrapper img[data-category='${categoryName}']`)
+
+        currentCategory.forEach(element => {
+            element.parentElement.style.display="block";
+        });
+
+    }
+
+    document.addEventListener('click', imageFilter)    
 })()

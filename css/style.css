@@ -81,7 +81,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 .section--designs {
     margin: 0 3.125%;
 
-    background: url(/images/features-designs/features-designs_bg.jpg) 50% 50%/cover no-repeat;
+    background: url(./images/features-designs/features-designs_bg.jpg) 50% 50%/cover no-repeat;
 
 }
 
@@ -106,7 +106,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     min-height: 450px;
 
     background-size: cover;
-    background-image: url(/images/intro/intro_bg.jpg);
+    background-image: url(./images/intro/intro_bg.jpg);
     background-color: #656567;
 }
 
@@ -151,7 +151,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
 
 /* intro--services-page intro */
 .intro--services-page {
-    background-image: url(/images/services-page/services-page_bg.jpg);
+    background-image: url(./images/services-page/services-page_bg.jpg);
 }
 
 .intro--services-page .intro__inner {
