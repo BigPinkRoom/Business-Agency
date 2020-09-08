@@ -253,59 +253,7 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     font-size: 14px;
 }
 
-.header.active {
-    background-color: #202b30;
-}
 
-.header.active .nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-
-    display: block;
-    width: 100%;
-
-    font-size: 19px;
-    line-height: 2.8;
-
-    background: #202b30;
-}
-
-.header.active .nav__li {
-    display: block;
-}
-
-.header.active .nav__li:last-child {
-    margin: 8px 26px;
-}
-
-.header.active .nav__link {
-    display: block;
-    width: 100%;
-}
-
-.header.active .nav__link::after {
-    margin-top: -3px;
-}
-
-.header.active .nav-toggle {
-    height: 30px;
-}
-
-.header.active .nav-toggle::before {
-    transform: rotate(45deg) translate3d(9px, 9px, 0);
-    transition: transform .2s linear;
-}
-
-.header.active .nav-toggle::after {
-    transform: rotate(-45deg) translate3d(10px, -10px, 0);
-    transition: transform .2s linear;
-}
-
-.header.active .nav-toggle__item {
-    background: 0;
-    transition: background .2s linear;
-}
 
 .header__inner {
     display: flex;
@@ -1348,6 +1296,60 @@ button::-moz-focus-inner {padding: 0; border: 0;}
     /* header */
     .header {
         margin-top: 0;
+    }
+
+    .header.active {
+        background-color: #202b30;
+    }
+    
+    .header.active .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+    
+        display: block;
+        width: 100%;
+    
+        font-size: 19px;
+        line-height: 2.8;
+    
+        background: #202b30;
+    }
+    
+    .header.active .nav__li {
+        display: block;
+    }
+    
+    .header.active .nav__li:last-child {
+        margin: 8px 26px;
+    }
+    
+    .header.active .nav__link {
+        display: block;
+        width: 100%;
+    }
+    
+    .header.active .nav__link::after {
+        margin-top: -3px;
+    }
+    
+    .header.active .nav-toggle {
+        height: 30px;
+    }
+    
+    .header.active .nav-toggle::before {
+        transform: rotate(45deg) translate3d(9px, 9px, 0);
+        transition: transform .2s linear;
+    }
+    
+    .header.active .nav-toggle::after {
+        transform: rotate(-45deg) translate3d(10px, -10px, 0);
+        transition: transform .2s linear;
+    }
+    
+    .header.active .nav-toggle__item {
+        background: 0;
+        transition: background .2s linear;
     }
 
     /* nav */
