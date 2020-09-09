@@ -1,7 +1,7 @@
 ### Вёрстка макета лендинга из psd.
 ## <a href="https://bigpinkroom.github.io/Mogo/">Ссылка на лендинг</a>
 ![alt text](screenshots/businness-agency__screenshot.jpg)
-## Mogo template
+## Businness agency template
 
 Адаптивная вёрстка макета лендинга из psd шаблона.
 
