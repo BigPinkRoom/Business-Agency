@@ -1,5 +1,5 @@
 ### Вёрстка макета лендинга из psd.
-## <a href="https://github.com/BigPinkRoom/Businness-Agency">Ссылка на лендинг</a>
+## <a href="https://bigpinkroom.github.io/Business-Agency/">Ссылка на лендинг</a>
 ![alt text](screenshots/business-agency__screenshot.jpg)
 ## Business-agency template
 
