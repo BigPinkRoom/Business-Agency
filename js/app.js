@@ -73,7 +73,7 @@
 
     // Gallery filter
     function imageFilter() {
-        if(!event.target.classList.contains("gallery__link")) return
+        if(!event.target.classList.contains("gallery__button")) return
         
         let categoryName = event.target.textContent.toLowerCase();
 
